@@ -1,0 +1,95 @@
+/* home.css */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('./cool-geometric-triangular-hallway-3d-rendering.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.home header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5); /* Agrega un fondo semi-transparente al encabezado */
+}
+
+.home .logo {
+  font-size: 1.7em;
+  cursor: default;
+  color: #fff;
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+.home .navigation a {
+  color: #fff;
+  font-size: 1.1em;
+  margin-left: 1px;
+  margin-right: 40px;
+  text-decoration: none;
+  padding: 6px 15px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.home .navigation a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.home_title {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font-size: 3.5em; /* Ajusta el tamaño de la fuente */
+  color: #fff;
+  text-align: center; /* Centra el título */
+}
+
+/* Estilo para el botón (ajusta según tus preferencias) */
+.home button {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  margin-top: 15px; 
+}
+
+.home button:hover {
+  background: #fff;
+  color: #0a0025;
+}
+.filters{
+  margin-bottom:20px;
+}
+.pagination {
+  margin-bottom: 30px;
+}
+.pagination button{
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.loading-spinner{
+  margin-bottom: 20px;
+}
+
+.home button.active {
+  background: #fff; /* Cambia el fondo de la página activa a blanco */
+  color: #0a0025; /* Cambia el color del texto de la página activa */
+  font-weight: bold; /* Hace que el texto de la página activa sea negrita */
+}

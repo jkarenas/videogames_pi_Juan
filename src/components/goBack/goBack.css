@@ -1,0 +1,25 @@
+/* GoBackButton.css */
+
+.go-back-button {
+        background-color: #3498db;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+      
+      .go-back-button:hover {
+        background-color: #2980b9;
+      }
+      
+      .arrow {
+        font-size: 24px;
+        margin-right: 8px;
+      }
+      
+      /* Añade más estilos si es necesario para adaptar el diseño de tu app */
+      
+
