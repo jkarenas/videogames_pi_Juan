@@ -8,7 +8,7 @@ export const GET_GENRES = "GET_GENRES"
 export function getVideogames() {
   return async function (dispatch) {
     try {
-      const response = await axios("videogames-pi-back-production.up.railway.app/videogames");
+      const response = await axios("/videogames");
 
      return dispatch({
         type: GET_VIDEOGAMES, 
@@ -22,7 +22,7 @@ export function getVideogames() {
 export function getByName(name){
     return async function (dispatch) {
         try {
-            const response = await axios(`videogames-pi-back-production.up.railway.app/?name=${name}`)
+            const response = await axios(`/?name=${name}`)
             return dispatch({
                 type: GET_BY_NAME,
                 payload: response.data,
@@ -37,7 +37,7 @@ export function getByName(name){
 export function getById (id){
   return async function (dispatch) {
     try {
-        const response = await axios(`videogames-pi-back-production.up.railway.app/videogames/${id}`)
+        const response = await axios(`/${id}`)
         console.log("este es el response de id," , response)
         return dispatch({
           type: GET_BY_ID,
@@ -52,7 +52,7 @@ export function getById (id){
 export function postVideogame(payload){
   return async function (dispatch){
     try {
-      const response = await axios.post("videogames-pi-back-production.up.railway.app/videogames", payload)
+      const response = await axios.post("/videogames", payload)
       console.log("del redux, accion",response )
       return response;
     } catch (error) {
@@ -63,7 +63,7 @@ export function postVideogame(payload){
 export function getGenres(){
   return async function(dispatch){
     try {
-      const response = await axios.get("videogames-pi-back-production.up.railway.app/genres")
+      const response = await axios.get("/genres")
       return dispatch({
         type: GET_GENRES, // Tipo de acción
         payload: response.data,
