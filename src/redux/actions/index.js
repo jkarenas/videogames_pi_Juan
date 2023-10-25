@@ -11,7 +11,7 @@ export function getVideogames() {
       const response = await axios("/videogames");
 
      return dispatch({
-        type: GET_VIDEOGAMES, 
+        type: GET_VIDEOGAMES, // Tipo de acción
         payload: response.data,
       });
     } catch (error) {
